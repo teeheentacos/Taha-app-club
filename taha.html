@@ -1,0 +1,46 @@
+<doctype html>
+<html>
+<head>
+<title>Hello my name is Taha</title>
+<style>
+body {
+	color:blue;
+	font-size: 72px;     
+}
+div{
+	display: inline-block;
+	color: green;
+}
+.red{
+	color: red;
+}
+</style>
+</head>
+<body>
+	<canvas id="myCanvas" width="400" height="400"></canvas>
+<script>
+var canvas = document.getElementById('myCanvas')
+var ctx = canvas.getContex("2d")
+
+var x=0
+var y=0
+function ball() {
+	x= x + 10
+	y= y + 10
+	ctx.beginPath()
+	ctx.arc(x,y,40,0,2*Math.PI)
+	ctx.stroke()
+	requestAnimationFrame(ball)
+}
+
+ball()
+</script>	
+hello
+<div class="red"><map name=""></map>
+vote taha for 
+</div>
+<div>
+student council
+</div>
+</body>
+</html>
